@@ -19,7 +19,7 @@ namespace MVC_Bootstrap_Template.Controllers
             return View(form);
         }
 
-
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public ActionResult Index(RegistrationViewModel form_data)
         {

@@ -18,7 +18,7 @@ namespace MVC_Bootstrap_Template.Models.Register
         public string Password { get; set; }
 
 
-        [Display(Name = "ConfirmPassword")]
+        [Display(Name = "Password Confirmation")]
         public string PasswordConfirm { get; set; }
 
     }
