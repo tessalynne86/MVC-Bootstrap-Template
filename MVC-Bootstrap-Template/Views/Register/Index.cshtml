@@ -1,0 +1,61 @@
+﻿@model MVC_Bootstrap_Template.Models.Register.RegistrationViewModel
+
+<div class="container body-content">
+    <div id="Register" class="row">
+        <div class="col-sm-12 col-md-8 col-md-push-2">
+            <div class="jumbotron">
+                <div class="page-header">
+                    <h1>Let's get started</h1>
+                    <small>Registration is easy!</small>
+                </div>
+                @using (Html.BeginForm("Index", "Register", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(false, String.Empty, new { @class = "input-validation-error" })
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6 col-lg-push-3">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <span class="required">*</span>@Html.LabelFor(m => m.Username)
+                                        @Html.TextBoxFor(m => m.Username, new { @class = "form-control", required = "required" })
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <span class="required">*</span>@Html.LabelFor(m => m.Email)
+                                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", required = "required" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <span class="required">*</span>@Html.LabelFor(m => m.Password)
+                                        @Html.TextBoxFor(m => m.Password, new { @class = "form-control", required = "required", type = "password" })
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <span class="required">*</span>@Html.LabelFor(m => m.PasswordConfirm)
+                                        @Html.TextBoxFor(m => m.PasswordConfirm, new { @class = "form-control", required = "required", type = "password" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12 text-right">
+                                    <button type="submit" class="btn btn-success">Let's go! <i class="fa fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
