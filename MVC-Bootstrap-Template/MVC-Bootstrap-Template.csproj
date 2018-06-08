@@ -197,6 +197,9 @@
     <Content Include="Connected Services\UserService\MVC_Bootstrap_Template.UserService.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\UserService\MVC_Bootstrap_Template.UserService.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\UserService\UserService.disco" />
     <None Include="Connected Services\UserService\configuration91.svcinfo" />
     <None Include="Connected Services\UserService\configuration.svcinfo" />
@@ -209,6 +212,15 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\images\3d-purple-flower-field-wallpaper.jpg" />
+    <Content Include="Content\images\Portfolio\desktop.png" />
+    <Content Include="Content\images\Portfolio\gazette-mail-blogs-template.png" />
+    <Content Include="Content\images\Portfolio\gazette-mail-project.png" />
+    <Content Include="Content\images\Portfolio\gazette-mail_realestate_desktop_3d.png" />
+    <Content Include="Content\images\Portfolio\lou-wendel-marine-desktop-3d.png" />
+    <Content Include="Content\images\Portfolio\screencapture-janjonesbooks-2018-06-07-22_32_50.png" />
+    <Content Include="Content\images\Portfolio\screencapture-marketing-healthplan-org-Symposium-2018-06-07-23_10_06.png" />
+    <Content Include="Content\images\Portfolio\screencapture-medicare2018-healthplan-org-2018-06-07-22_31_34.png" />
+    <Content Include="Content\images\Portfolio\screencapture-tessalynne-2018-06-07-22_32_09.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -250,6 +262,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\UserService\UserService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\UserService\UserService3.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
